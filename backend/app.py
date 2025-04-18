@@ -1,11 +1,11 @@
-from flask import Flask, request, jsonify
-import pickle
 import os
+import pickle
+from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-# Load the model
-model_path = os.path.join('backend', 'model', 'spam_classifier.pkl')  # Adjusted path
+# Corrected model path for Render (model folder is inside the same backend folder)
+model_path = os.path.join('model', 'spam_classifier.pkl')
 if not os.path.exists(model_path):
     raise FileNotFoundError(f"The model file was not found at {model_path}. Please ensure the file exists.")
 
