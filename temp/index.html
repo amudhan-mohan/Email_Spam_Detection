@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Spam Detector</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Email Spam Detector</h1>
+    <form id="emailForm" class="form">
+      <input type="email" id="email_id" placeholder="Enter your email" required>
+      <input type="text" id="subject" placeholder="Email subject" required>
+      <textarea id="message" rows="5" placeholder="Enter message..." required></textarea>
+      <button type="submit">Check for Spam</button>
+    </form>
+    <h2 id="result"></h2>
+  </div>
+
+  <script>
+    document.getElementById('emailForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const email_id = document.getElementById('email_id').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+
+      try {
+        const response = await fetch("https://email-spam-detection-eyxh.onrender.com/predict", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ email_id, subject, message })
+        });
+
+        const data = await response.json();
+        document.getElementById('result').innerText = `Prediction: ${data.result}`;
+      } catch (error) {
+        document.getElementById('result').innerText = 'Error fetching prediction.';
+      }
+    });
+  </script>
+</body>
+
+</html>
