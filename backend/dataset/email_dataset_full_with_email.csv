@@ -1,0 +1,52 @@
+email_id,subject,body,label
+abc@xyz.com,Hello,Let's catch up soon,ham
+offer@spam.com,Win now,You've won a free iPhone!,spam
+info@bank.com,Update needed,Your account needs verification,spam
+friend@chat.com,Plans?,Wanna go hiking this weekend?,ham
+promo@deals.com,Limited Time Offer,Get 50% off on all items!,spam
+support@service.com,Account Alert,Your password has been changed,spam
+team@work.com,Meeting Reminder,Don't forget our meeting at 3 PM,ham
+news@updates.com,Weekly Newsletter,Here are the top stories this week,ham
+sale@shop.com,Flash Sale,Exclusive discounts just for you!,spam
+family@home.com,Reunion,Looking forward to seeing everyone this weekend!,ham
+alerts@bank.com,Transaction Alert,A withdrawal of $500 was made from your account,spam
+events@community.com,Join Us,Don't miss the upcoming community event,ham
+offers@travel.com,Vacation Deals,Book your dream vacation now!,spam
+colleague@office.com,Project Update,Please review the attached document,ham
+promo@store.com,Big Sale,Shop now and save big!,spam
+friend@social.com,Party Invite,Are you free this Friday night?,ham
+alerts@security.com,Security Notice,Unusual login attempt detected,spam
+news@daily.com,Daily Digest,Here are today's top headlines,ham
+deals@shopping.com,Exclusive Offer,Buy one get one free!,spam
+family@updates.com,Family News,Grandma's birthday is next week!,ham
+support@helpdesk.com,Password Reset,Click here to reset your password,spam
+team@project.com,Task Reminder,Please complete your assigned tasks,ham
+promo@electronics.com,New Arrivals,Check out the latest gadgets!,spam
+friend@group.com,Weekend Plans,Let's plan a trip to the beach,ham
+alerts@finance.com,Payment Due,Your bill is due tomorrow,spam
+news@weekly.com,Weekly Update,Here are the highlights of the week,ham
+offers@hotel.com,Hotel Deals,Book your stay at discounted rates!,spam
+colleague@team.com,Meeting Notes,Please find the meeting notes attached,ham
+promo@fashion.com,Style Alert,Trendy outfits now on sale!,spam
+friend@chat.com,Movie Night,Want to watch a movie tonight?,ham
+alerts@bank.com,Account Locked,Your account has been temporarily locked,spam
+news@tech.com,Tech News,Latest updates in the tech world,ham
+deals@travel.com,Flight Discounts,Save big on your next flight!,spam
+family@home.com,Dinner Plans,What should we cook tonight?,ham
+support@service.com,Service Update,We are upgrading our systems,spam
+team@work.com,Deadline Reminder,Submit your report by end of day,ham
+promo@deals.com,Special Offer,Limited-time discounts available!,spam
+friend@chat.com,Game Night,Are you joining us for game night?,ham
+alerts@security.com,Login Alert,New login from an unknown device,spam
+news@updates.com,Monthly Recap,Here's what happened this month,ham
+sale@shop.com,Holiday Sale,Don't miss our holiday discounts!,spam
+family@home.com,Vacation Plans,Let's decide on our next trip!,ham
+events@community.com,Volunteer Needed,Join us for the cleanup drive,ham
+offers@travel.com,Adventure Awaits,Book your adventure package today!,spam
+colleague@office.com,Feedback Request,Please share your feedback on the project,ham
+promo@store.com,Clearance Sale,Everything must go!,spam
+friend@social.com,Lunch Plans,Want to grab lunch tomorrow?,ham
+alerts@finance.com,Overdue Notice,Your payment is overdue,spam
+news@daily.com,Top Stories,Here are the latest updates,ham
+deals@shopping.com,Flash Deal,Limited stock available!,spam
+family@updates.com,Family Gathering,Let's plan a get-together soon!,ham

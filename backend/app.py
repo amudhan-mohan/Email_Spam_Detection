@@ -5,7 +5,10 @@ import os
 app = Flask(__name__)
 
 # Load the model
-model_path = os.path.join('model', 'spam_classifier.pkl')
+model_path = os.path.join('backend', 'model', 'spam_classifier.pkl')  # Adjusted path
+if not os.path.exists(model_path):
+    raise FileNotFoundError(f"The model file was not found at {model_path}. Please ensure the file exists.")
+
 with open(model_path, 'rb') as f:
     vectorizer, model = pickle.load(f)
 
@@ -27,4 +30,4 @@ def predict():
     return jsonify({"result": "SPAM" if prediction == 1 else "NOT SPAM"})
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)

@@ -1,62 +1,85 @@
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #1e1e2f;
-  color: #ffffff;
+/* Reset and base styles */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  background: #1f1f1f;
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 10px rgba(0, 255, 170, 0.2);
 }
 
 h1 {
   text-align: center;
-  color: #00d4ff;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  color: #00ffc3;
 }
 
-form {
-  background-color: #2a2a3b;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.form input,
+.form textarea {
   width: 100%;
-  max-width: 400px;
-}
-
-input, textarea, button {
-  width: 100%;
+  padding: 12px 15px;
   margin-bottom: 15px;
-  padding: 10px;
   border: none;
-  border-radius: 4px;
-  font-size: 16px;
+  border-radius: 6px;
+  background-color: #2a2a2a;
+  color: #fff;
+  font-size: 1rem;
 }
 
-input, textarea {
-  background-color: #3a3a4f;
-  color: #ffffff;
-}
-
-input::placeholder, textarea::placeholder {
-  color: #a0a0b0;
+.form input:focus,
+.form textarea:focus {
+  outline: none;
+  border: 1px solid #00ffc3;
+  background-color: #333;
 }
 
 button {
-  background-color: #00d4ff;
-  color: #ffffff;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #00ffc3;
+  color: #000;
+  font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 button:hover {
-  background-color: #00a3cc;
+  background-color: #00bfa6;
 }
 
 #result {
-  text-align: center;
   margin-top: 20px;
-  font-size: 18px;
-  color: #00ff88;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ffea00;
+}
+
+/* Responsive for smaller devices */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
 }
