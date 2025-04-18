@@ -48,6 +48,8 @@ Email_Spam_Detection/
     ```
 3. **Access the Web App**: Open your browser and navigate to `http://localhost:5000` to access the web interface.
 4. **Make Predictions**: Enter the email details (email ID, subject, and body) in the web app and click "Submit" to classify the email as spam or ham.
+5. **Public Web App**: Alternatively, access the public version of the web app at:
+   [Public Web App Link](https://amudhan-mohan.github.io/Email_Spam_Detection/frontend/index.html)
 
 ## Dataset
 The dataset is located in `backend/dataset/email_dataset_full_with_email.csv`. It contains labeled examples of spam and ham emails.
