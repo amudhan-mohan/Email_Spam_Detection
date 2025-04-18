@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS
 
 # Load the model
-model_path = os.path.join('backend', 'model', 'spam_classifier.pkl')  # Adjust if needed
+model_path = os.path.join('model', 'spam_classifier.pkl')  # Adjust if needed
 if not os.path.exists(model_path):
     raise FileNotFoundError(f"The model file was not found at {model_path}. Please ensure the file exists.")
 
